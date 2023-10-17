@@ -47,33 +47,33 @@ const Navbar = () => {
             Products
             <FontAwesomeIcon icon={faAngleDown} className="ml-2 text-sm" />
           </span>
-          <ul className="absolute hidden group-hover:block bg-gray-200 text-black p-4 shadow-lg rounded-lg mt-2 w-64">
+          <ul className="absolute hidden group-hover:block bg-gray-200 text-black p-4 shadow-lg rounded-lg w-72">
   <li className="mb-2">
-    <Link to="/product1" className="block  px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Instruments</Link>
+    <Link to="/product1" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Instruments</Link>
   </li>
   <li className="mb-2">
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Meters and Probes</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Meters and Probes</Link>
   </li>
   <li className="mb-2">
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Online Analyzers and Sensors</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Online Analyzers and Sensors</Link>
   </li>
   <li className="mb-2">
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Resins</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Resins</Link>
   </li>
   <li className="mb-2">
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">RO Membranes</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">RO Membranes</Link>
   </li>
   <li className="mb-2">
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">RO/UF/CWPT Systems</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">RO/UF/CWPT Systems</Link>
   </li>
   <li className="mb-2">
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Antiscalants</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Antiscalants</Link>
   </li>
   <li className="mb-2">
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Chemical Dosing Pumps</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Chemical Dosing Pumps</Link>
   </li>
   <li>
-    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">UV Disinfection Systems</Link>
+    <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">UV Disinfection Systems</Link>
   </li>
 </ul>
 
