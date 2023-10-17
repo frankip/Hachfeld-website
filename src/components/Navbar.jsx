@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faTimes, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -10,15 +10,29 @@ const Navbar = () => {
   const toggleSearchVisibility = () => {
     setIsSearchVisible(!isSearchVisible);
   };
+
+  const [isTopSectionVisible, setIsTopSectionVisible] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setIsTopSectionVisible(false);
+      } else {
+        setIsTopSectionVisible(true);
+      }
+    });
+  }, []);
   return (
     <div>
-    <div className="text-white p-2 text-center bg-red-950">
-  <span className="font-bold">Email:</span> info@hachfeld.co.ke
-  <span className="font-bold pl-14">Call Now:</span> +254 750 520 179 | +254 717 520 179
-  <span className="font-bold pl-14">Visit us:</span> Office 308, Lunga Lunga Square, Industrial Area, Nairobi.
-</div>
+    {isTopSectionVisible && (
+      <div className="text-white p-2 text-center bg-red-950">
+        <span className="font-bold">Email:</span> info@hachfeld.co.ke
+        <span className="font-bold pl-14">Call Now:</span> +254 750 520 179 | +254 717 520 179
+        <span className="font-bold pl-14">Visit us:</span> Office 308, Lunga Lunga Square, Industrial Area, Nairobi.
+      </div>
+    )}
 
-    <nav className="flex items-center justify-between p-4 bg-white text-black">
+    <nav className={`flex items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0'}`}>
       <div className="flex items-center pl-96">
         <Link to="/"><img src="src/images/logo.png" alt="Logo" className="w-full h-11" /></Link>
         
