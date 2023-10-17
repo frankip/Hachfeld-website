@@ -14,7 +14,8 @@ const LandingPage = () => {
           height: "650px",
      
         }}
-      ><h1 className="font-bold mb-4 ml-8 text-6xl ">Supporting your Analytical Needs.</h1>
+      >
+        <h1 className="font-bold mb-4 ml-8 text-6xl ">Supporting your Analytical Needs.</h1>
         <p className="text-4xl mb-8 ml-8 pt-6 pb-6">
         Analytical laboratory & process equipment, reagents and consumables.
         </p>
@@ -250,25 +251,25 @@ Through strategic partnerships with leading global manufacturers. We help munici
           </div>
           </div>
       </div>
-        {/* Third Section */}
+       
         <div className="third-section py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Our Promise</h2>
         
           <div className="grid grid-cols-3 gap-4 ">
-            {/* Card 1 */}
+         
             <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:shadow-lg hover:scale-105 transition duration-300 border border-gray-300">
               <img src="src/images/quality.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
               <h3 className="text-xl font-bold mb-2">Provision of Quality Products</h3>
             </div>
 
-            {/* Card 2 */}
+         
             <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:shadow-lg hover:scale-105 transition duration-300 border border-gray-300">
               <img src="src/images/user.png" alt="Icon 2" className="w-16 h-16 mb-4 ml-52" />
               <h3 className="text-xl font-bold mb-2">Timely Client Engagements</h3>
             </div>
 
-            {/* Card 3 */}
+            
             <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:shadow-lg hover:scale-105 transition duration-300 border border-gray-300">
               <img src="src/images/tag.png" alt="Icon 3" className="w-16 h-16 mb-4 ml-52" />
               <h3 className="text-xl font-bold mb-2">Local Inventory</h3>
@@ -279,6 +280,88 @@ Through strategic partnerships with leading global manufacturers. We help munici
           </p>
         </div>
         </div>
+
+
+     
+      <div className="fourth-section py-16 bg-gray-100">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">We partner with leading global brands
+</h2>
+ <p className="text-xl mb-8 mt-10">
+ The provision of innovative products and high-quality after sale services presented to our customers forms the bedrock of our business.
+          </p>
+  
+          <div className="grid grid-cols-3 gap-4">
+           
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="/src/images/hach-and-hachfeld-kenya.webp" alt="Icon 1" className="h-24 mb-4 ml-36 w-48" />
+              <h3 className="text-2xl font-bold mb-2">Hach</h3>
+              <p className='text-lg'>Complete range of Lab and Online Water Quality Testing Solutions</p>
+            </div>
+
+          
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="/src/images/Luminultra-1.webp" alt="Icon 2" className="h-24 mb-4 ml-32 w-48" />
+              <h3 className="text-2xl font-bold mb-2">Luminultra
+</h3>
+<p className='text-lg'>Rapid, Accurate and Portable Microbial Testing Solutions</p>
+            </div>
+
+            
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="src/images/lgchem-2.webp" alt="Icon 3" className="h-24 mb-4 ml-32 w-48" />
+              <h3 className="text-2xl font-bold mb-2">LG Chem</h3>
+              <p className='text-lg' >NanoH2O™ seawater and brackish water RO Membranes.</p>
+            </div>
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="/src/images/Purolite_Life_Sciences_Logo-1.webp" alt="Icon 3"className="h-24 mb-4 ml-32 w-48" />
+              <h3 className="text-2xl font-bold mb-2">Purolite</h3>
+              <p className='text-lg'>Ion exchange, adsorbent, and specialty resin technologies</p>
+            </div>
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="/src/images/prominent-1.webp" alt="Icon 3" className="h-24 mb-4 ml-32 w-48" />
+              <h3 className="text-2xl font-bold mb-2">Prominent</h3>
+              <p className='text-lg'>Metering Systems for Fluid Handling</p>
+            </div>
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="/src/images/suez-waters-1.webp" alt="Icon 3" className="h-24 mb-4 ml-32 w-48" />
+              <h3 className="text-2xl font-bold mb-2">Suez</h3>
+              <p className='text-lg'>Chemical Solutions for Water Treatment </p>
+            </div>
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="/src/images/magnetic-logo-2.webp" alt="Icon 3" className="h-24 mb-4 ml-32 w-48" />
+              <h3 className="text-2xl font-bold mb-2">Magnetic</h3>
+              <p className='text-lg'>Portable Desalination Technologies</p>
+            </div>
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
+              <img src="/src/images/luminor_logo-1.webp" alt="Icon 3" className="h-24 mb-4 ml-32 w-48" />
+              <h3 className="text-2xl font-bold mb-2">Luminor</h3>
+              <p className='text-lg'>UltraViolet Water Disinfection Solutions</p>
+            </div>
+          </div>
+
+          
+          
+
+          
+
+          
+
+         
+        </div>
+      </div>
+      <div className="bg-white text-black p-8 flex flex-col md:flex-row items-start md:items-center justify-center">
+      <div className="text-left">
+        <h2 className="text-3xl font-bold mb-4 ">Ready to get started?</h2>
+        <p className="text-xl mb-8">
+          Contact us today to learn how our customized plans can help grow your business.
+        </p>
+      </div>
+      <button className="bg-red-800 text-white hover:bg-red-700 font-bold py-2 px-6 text-xl border-red-950">
+        Request a Quote
+      </button>
+    </div>
+
     </div>
     
   );
