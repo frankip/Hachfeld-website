@@ -2,7 +2,7 @@ import React from 'react';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer';
 const LandingPage = () => {
   
   return (
@@ -34,7 +34,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
       </div>
       <div className="py-16 bg-gray-100">
         <div className="container mx-auto text-center">
-          <div className='bg-white p-1  shadow-md'><h2 className="text-3xl mb-4">What We Do</h2></div>
+          <div className='bg-white p-1  shadow-md'><h2 className="text-3xl mb-4 mt-4">What We Do</h2></div>
           <p className="text-4xl font-bold mb-8 mt-6">
           Our Products and Solutions
           </p>
@@ -186,7 +186,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
               </div>
             </div>
             <div
-              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              className="relative p-4 rounded shadow-md hover:bg-gray-400 transition duration-300"
               style={{
                 backgroundImage: "url('https://images.pexels.com/photos/5699522/pexels-photo-5699522.jpeg?auto=compress&cs=tinysrgb&w=1600')",
                 backgroundSize: 'cover',
@@ -361,41 +361,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
         Request a Quote
       </button>
     </div>
-    <div className=" text-white p-8 bg-rose-950">
-      <div className="flex flex-col md:flex-row items-start justify-between pl-80 pr-80">
-        <div className="text-left">
-          <h2 className="text-xl font-bold mb-4">Visit Us</h2>
-          <p>Office 308, Lunga Lunga Square,</p>
-            <p>Industrial Area,</p>
-            <p>Nairobi, Kenya.</p>
-          
-        </div>
-        <div className="text-left mt-6 md:mt-0 md:ml-12">
-          <h2 className="text-xl font-bold mb-4">Quick Links</h2>
-          <ul className="space-y-2">
-            <Link to="/products"><li><a >Our Products</a></li></Link>
-            <li><a href="#">Get Free Quote</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Call us</a></li>
-          </ul>
-        </div>
-        <div className="text-left mt-6 md:mt-0 md:ml-12">
-          <h2 className="text-xl font-bold mb-4">Call us</h2>
-          <p>+254 750 520 179</p>
-          <p>+254 717 520 179</p>
-        </div>
-        <div className="text-left mt-6 md:mt-0 md:ml-12">
-          <h2 className="text-xl font-bold mb-4">Email us</h2>
-          <p>sales@hachfeld.co.ke</p>
-          <p>info@hachfeld.co.ke</p>
-        </div>
-      </div>
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center ">
-        <p className="text-sm ">
-          &copy; 2023. Hachfeld Limited. All rights reserved. Website by Teknezi
-        </p>
-      </div>
-    </div>
+    < Footer />
   
 
 

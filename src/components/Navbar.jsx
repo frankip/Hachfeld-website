@@ -32,7 +32,8 @@ const Navbar = () => {
       </div>
     )}
 
-    <nav className={`flex items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0'}`}>
+<nav className={`flex items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-1000'}`}>
+
       <div className="flex items-center pl-96">
         <Link to="/"><img src="src/images/logo.png" alt="Logo" className="w-full h-11" /></Link>
         
@@ -41,21 +42,44 @@ const Navbar = () => {
         <li>
           <Link to="/" className="hover:no-underline hover:text-gray-500 transition-colors duration-300 font-medium text-lg">Home</Link>
         </li>
-        <li className="relative group">
+        <Link to="/products"><li className="relative group">
           <span className=" hover:text-gray-500 cursor-pointer transition-colors duration-300 font-medium text-lg">
             Products
             <FontAwesomeIcon icon={faAngleDown} className="ml-2 text-sm" />
           </span>
-          <ul className="absolute hidden group-hover:block bg-white text-black p-2">
-            <li>
-              <Link to="/product1" className="hover:no-underline">Product 1</Link>
-            </li>
-            <li>
-              <Link to="/product2" className="hover:no-underline">Product 2</Link>
-            </li>
-            
-          </ul>
-        </li>
+          <ul className="absolute hidden group-hover:block bg-gray-200 text-black p-4 shadow-lg rounded-lg mt-2 w-64">
+  <li className="mb-2">
+    <Link to="/product1" className="block  px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Instruments</Link>
+  </li>
+  <li className="mb-2">
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Meters and Probes</Link>
+  </li>
+  <li className="mb-2">
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Online Analyzers and Sensors</Link>
+  </li>
+  <li className="mb-2">
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Resins</Link>
+  </li>
+  <li className="mb-2">
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">RO Membranes</Link>
+  </li>
+  <li className="mb-2">
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">RO/UF/CWPT Systems</Link>
+  </li>
+  <li className="mb-2">
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Antiscalants</Link>
+  </li>
+  <li className="mb-2">
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Chemical Dosing Pumps</Link>
+  </li>
+  <li>
+    <Link to="/product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">UV Disinfection Systems</Link>
+  </li>
+</ul>
+
+
+
+        </li></Link>
         <li>
           <Link to="/resources" className="hover:no-underline hover:text-gray-500 transition-colors duration-300 font-medium text-lg">Resources</Link>
         </li>
