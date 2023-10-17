@@ -350,10 +350,10 @@ Through strategic partnerships with leading global manufacturers. We help munici
          
         </div>
       </div>
-      <div className="bg-white text-black p-8 flex flex-col md:flex-row items-start md:items-center justify-center">
+      <div className="bg-white text-black p-8 flex flex-col md:flex-row items-start md:items-center justify-between pl-72 pr-72 mt-12 mb-12">
       <div className="text-left">
-        <h2 className="text-3xl font-bold mb-4 ">Ready to get started?</h2>
-        <p className="text-xl mb-8">
+        <h2 className="text-5xl font-bold mb-4 ">Ready to get started?</h2>
+        <p className="text-2xl mb-8">
           Contact us today to learn how our customized plans can help grow your business.
         </p>
       </div>
