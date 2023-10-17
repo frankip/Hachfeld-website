@@ -1,6 +1,7 @@
 import React from 'react';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   
@@ -10,17 +11,18 @@ const LandingPage = () => {
         className="hero-section bg-cover bg-center text-white text-left py-48 h-96"
         style={{
           backgroundImage: "url('https://images.pexels.com/photos/257703/pexels-photo-257703.jpeg?auto=compress&cs=tinysrgb&w=1600')",
-          height: "650px" 
+          height: "650px",
+     
         }}
-      >
-        <h1 className="text-5xl font-bold mb-4 ml-8 ">Supporting your Analytical Needs.</h1>
-        <p className="text-xl mb-8 ml-8">
+      ><h1 className="font-bold mb-4 ml-8 text-6xl ">Supporting your Analytical Needs.</h1>
+        <p className="text-4xl mb-8 ml-8 pt-6 pb-6">
         Analytical laboratory & process equipment, reagents and consumables.
         </p>
-        <button className="bg-red-800 text-white hover:bg-red-700 font-bold py-2 px-6 text-xl ml-8">
+        <button className="bg-red-800 text-white hover:bg-red-700 font-bold py-2 px-6 text-xl ml-8 border-red-950 ">
           View Products
-        </button>
-      </div>
+        </button></div>
+       
+     
       <div className="landing-content text-center mt-8">
         <p className="text-xl">
         Hachfeld Limited is an equipment, reagents and consumables distribution company in Nairobi, Kenya.
@@ -35,7 +37,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
           <p className="text-4xl font-bold mb-8 mt-6">
           Our Products and Solutions
           </p>
-          <div className="grid grid-cols-3 gap-4 ">
+          <div className="grid grid-cols-3 gap-1 ">
           <div className="bg-white p-4 rounded shadow-md aspect-1x1 hover:bg-gray-200 transition duration-300">
           <img src="src/images/flask.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
               <h3 className="text-2xl font-bold mb-2">Lab Instruments</h3>
@@ -73,7 +75,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
             
             <div className="bg-white p-4 rounded shadow-md aspect-1x1 hover:bg-gray-200 transition duration-300">
             <img src="src/images/filtration.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
-              <h3 className="text-xl font-bold mb-2">RO/UF/IE Systems</h3>
+              <h3 className="text-2xl font-bold mb-2">RO/UF/IE Systems</h3>
               <a href="#" className="text-gray-500 hover:text-gray-700 flex items-center justify-center">
                 Learn More <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
               </a>
@@ -81,14 +83,14 @@ Through strategic partnerships with leading global manufacturers. We help munici
 
             <div className="p-4 rounded shadow-md aspect-1x1 bg-gray-100  hover:bg-gray-200 transition duration-300">
             <img src="src/images/medical-lab.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
-              <h3 className="text-xl font-bold mb-2">Antiscalants</h3>
+              <h3 className="text-2xl font-bold mb-2">Antiscalants</h3>
               <a href="#" className="text-gray-500 hover:text-gray-700 flex items-center justify-center">
                 Learn More <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
               </a>
             </div>
             <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:bg-gray-200 transition duration-300">
             <img src="src/images/microchip.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
-              <h3 className="text-xl font-bold mb-2">Online Analyzers & Sensors</h3>
+              <h3 className="text-2xl font-bold mb-2">Online Analyzers & Sensors</h3>
               <a href="#" className="text-gray-500 hover:text-gray-700 flex items-center justify-center">
                 Learn More <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
               </a>
@@ -96,7 +98,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
 
             <div className="p-4 rounded shadow-md aspect-1x1 bg-gray-100 hover:bg-gray-200 transition duration-300">
             <img src="src/images/humidity.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
-              <h3 className="text-xl font-bold mb-2">UV Disinfection Systems
+              <h3 className="text-2xl font-bold mb-2">UV Disinfection Systems
 </h3>
               <a href="#" className="text-gray-500 hover:text-gray-700 flex items-center justify-center">
                 Learn More <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
@@ -104,19 +106,179 @@ Through strategic partnerships with leading global manufacturers. We help munici
             </div>
             <div className="p-4 rounded shadow-md aspect-1x1 bg-white  hover:bg-gray-200 transition duration-300">
             <img src="src/images/oil-refinery.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
-              <h3 className="text-xl font-bold mb-2">Chemical Dosing Pumps
+              <h3 className="text-2xl font-bold mb-2">Chemical Dosing Pumps
 </h3>
               <a href="#" className="text-gray-500 hover:text-gray-700 flex items-center justify-center">
                 Learn More <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
               </a>
 
             </div>
-            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ">
-  View All Products
-</button>
+            
+           
+            </div> 
+            <Link to="/products"><div className="flex justify-center mt-6">
+            <button className="bg-transparent hover:bg-blue-500 text-blue-700 text-2xl font-semibold hover:text-white py-2 px-4 border border-red-700 hover:border-transparent rounded active:bg-blue-500 active:text-white active:border-transparent">
+              View All Products
+            </button>
+          </div></Link>
             </div>
+            <div className="second-section py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">We serve diverse vertical markets</h2>
+          <p className="text-xl mb-8">
+          There is no denying the fact that the success of an analytical & engineering lies mostly in the services it offers. Ours is a proven record in various environments and industries.
+          </p>
+          <div className="grid grid-cols-4 gap-1">
+          <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/5047901/pexels-photo-5047901.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Water Treatment</span>
+              </div>
             </div>
+            <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+             
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Power Generation</span>
+              </div>
+            </div>
+            <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/3735709/pexels-photo-3735709.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+             
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Contract Laboratories</span>
+              </div>
+            </div>
+            <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/3081940/pexels-photo-3081940.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+             
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Food & Beverage</span>
+              </div>
+            </div>
+            <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/5699522/pexels-photo-5699522.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+             
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Pharmaceutical Companies</span>
+              </div>
+            </div>
+
+            <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/2128249/pexels-photo-2128249.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+             
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Academic Institutions</span>
+              </div>
+            </div>
+
+            <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/2101137/pexels-photo-2101137.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+             
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Mining Companies</span>
+              </div>
+            </div>
+
+            <div
+              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              style={{
+                backgroundImage: "url('https://images.pexels.com/photos/8470810/pexels-photo-8470810.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '200px',
+             
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <span className="text-xl font-bold text-white">Engineering & Consultancy</span>
+              </div>
+            </div>
+
+
+           
+          </div>
+          </div>
+          </div>
       </div>
+        {/* Third Section */}
+        <div className="third-section py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">Our Promise</h2>
+        
+          <div className="grid grid-cols-3 gap-4 ">
+            {/* Card 1 */}
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:shadow-lg hover:scale-105 transition duration-300 border border-gray-300">
+              <img src="src/images/quality.png" alt="Icon 1" className="w-16 h-16 mb-4 ml-52" />
+              <h3 className="text-xl font-bold mb-2">Provision of Quality Products</h3>
+            </div>
+
+            {/* Card 2 */}
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:shadow-lg hover:scale-105 transition duration-300 border border-gray-300">
+              <img src="src/images/user.png" alt="Icon 2" className="w-16 h-16 mb-4 ml-52" />
+              <h3 className="text-xl font-bold mb-2">Timely Client Engagements</h3>
+            </div>
+
+            {/* Card 3 */}
+            <div className="p-4 rounded shadow-md aspect-1x1 bg-white hover:shadow-lg hover:scale-105 transition duration-300 border border-gray-300">
+              <img src="src/images/tag.png" alt="Icon 3" className="w-16 h-16 mb-4 ml-52" />
+              <h3 className="text-xl font-bold mb-2">Local Inventory</h3>
+            </div>
+          </div>
+          <p className="text-xl mb-8 mt-10">
+            Discover the solutions we provide to make your processes efficient.
+          </p>
+        </div>
+        </div>
     </div>
     
   );
