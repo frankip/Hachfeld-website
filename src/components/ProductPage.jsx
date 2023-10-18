@@ -6,32 +6,41 @@ const ProductPage = () => {
   const products = [
     {
       id: 1,
-      name: 'Product 1',
-      description: 'Description for Product 1.',
-      price: 30.99,
-      imageUrl: 'https://example.com/product1-image.jpg',
+      name: 'Antiscalants(3)',
+     
+      
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4iEEBoDTAT7hyMxucdmGQWdXemaOln0YEg&usqp=CAU',
     },
     {
       id: 2,
-      name: 'Product 2',
-      description: 'Description for Product 2.',
-      price: 45.99,
-      imageUrl: 'https://example.com/product2-image.jpg',
+      name: 'Chemical Dosing Pumps(2)',
+     
+     
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-RSJ4bY11b4rHGv4V2EPtqJOK--H6Jg6ow&usqp=CAU',
     },
     {
       id: 3,
-      name: 'Product 3',
-      description: 'Description for Product 2.',
-      price: 45.99,
-      imageUrl: 'https://example.com/product2-image.jpg',
+      name: 'Lab Instruments(18)',
+     
+     
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZG2_5VJc5Wy1MIjz0bb5kIsKKzNAIPopsAA&usqp=CAU',
     },
     {
       id: 4,
-      name: 'Product 4',
-      description: 'Description for Product 2.',
-      price: 45.99,
-      imageUrl: 'https://example.com/product2-image.jpg',
+      name: 'Lab Meters And Probes(13)',
+     
+     
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSETdbeg5xFiTid11LX0Qx9H5_1ygWkPaz-1A&usqp=CAU',
     },
+    {
+      id: 5,
+      name: 'Online Analyzers And Sensors(4)',
+     
+     
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_nIFFh6ehRTeaNMixnZXZaqwfENmXxPOLA&usqp=CAU',
+    },
+    
+    
    
   ];
 
@@ -40,7 +49,7 @@ const ProductPage = () => {
       <div className="flex flex-col sm:flex-row ml-80 mr-96">
         <div className="sm:w-1/3 p-4  ml-4 sm:ml-0">
           <div className="mb-10 bg-gray-200 p-6 flex justify-center">
-            <button className="bg-red-800 text-white text-2xl px-4 py-4 hover:bg-red-700">
+            <button className="bg-red-800 text-white text-2xl px-14 py-7 hover:bg-red-700">
               Get a Free Quote
             </button>
           </div>
@@ -61,13 +70,10 @@ const ProductPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
             {products.map((product) => (
               <div key={product.id} className="bg-white p-6">
-                <img src={product.imageUrl} alt={product.name} className="w-full h-32 object-cover mb-4" />
+                <img src={product.imageUrl} alt={product.name} className="w-fullobject-cover mb-4 h-96" />
                 <h3 className="text-xl font-semibold">{product.name}</h3>
-                <p className="text-gray-700">{product.description}</p>
-                <p className="text-indigo-600 font-bold mt-2">${product.price}</p>
-                <Link to={`/product/${product.id}`} className="text-indigo-600 hover:underline mt-2">
-                  View Details
-                </Link>
+              
+
               </div>
             ))}
           </div>
