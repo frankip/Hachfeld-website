@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faTimes, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faTimes, faAngleDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
       </div>
     )}
 
-<nav className={`flex items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-1000'}`}>
+<nav className={`flex border border-gray-300 items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-1000'}`}>
 
       <div className="flex items-center pl-96">
         <Link to="/"><img src="src/images/logo.png" alt="Logo" className="w-full h-11" /></Link>
@@ -48,8 +48,24 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faAngleDown} className="ml-2 text-sm" />
           </span>
           <ul className="absolute hidden group-hover:block bg-gray-200 text-black p-4 shadow-lg rounded-lg w-72">
-  <li className="mb-2">
-    <Link to="/product1" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Instruments</Link>
+          <li className="mb-2 relative">
+    <Link to="/product1" className="flex justify-between items-center py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">
+      <span>Lab Instruments</span>
+      <span className="ml-2"><FontAwesomeIcon icon={faChevronRight} className="fa-xs" /></span>
+    </Link>
+    <ul className="absolute hidden left-full top-0 mt-0 ml-2">
+      <li className="mb-2">
+        <Link to="/sub-product1" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">
+          Sub Product 1
+        </Link>
+      </li>
+      <li className="mb-2">
+        <Link to="/sub-product2" className="block py-2 px-6 hover:bg-gray-100 hover:text-gray-800 rounded-lg">
+          Sub Product 2
+        </Link>
+      </li>
+      {/* Add more submenu items as needed */}
+    </ul>
   </li>
   <li className="mb-2">
     <Link to="/product2" className="block py-2 px-2 hover:bg-gray-100 hover:text-gray-800 rounded-lg">Lab Meters and Probes</Link>

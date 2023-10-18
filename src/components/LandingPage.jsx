@@ -131,7 +131,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
           </p>
           <div className="grid grid-cols-4 gap-1">
           <div
-              className="relative p-4 rounded shadow-md hover:bg-gray-200 transition duration-300"
+              className="relative p-4 rounded shadow-md  "
               style={{
                 backgroundImage: "url('https://images.pexels.com/photos/5047901/pexels-photo-5047901.jpeg?auto=compress&cs=tinysrgb&w=1600')",
                 backgroundSize: 'cover',
@@ -176,7 +176,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
               style={{
                 backgroundImage: "url('https://images.pexels.com/photos/3081940/pexels-photo-3081940.jpeg?auto=compress&cs=tinysrgb&w=1600')",
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                // backgroundPosition: 'center',
                 height: '200px',
              
               }}
