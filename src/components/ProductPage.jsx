@@ -18,7 +18,21 @@ const ProductPage = () => {
       price: 45.99,
       imageUrl: 'https://example.com/product2-image.jpg',
     },
-    // Add more products as needed
+    {
+      id: 3,
+      name: 'Product 3',
+      description: 'Description for Product 2.',
+      price: 45.99,
+      imageUrl: 'https://example.com/product2-image.jpg',
+    },
+    {
+      id: 4,
+      name: 'Product 4',
+      description: 'Description for Product 2.',
+      price: 45.99,
+      imageUrl: 'https://example.com/product2-image.jpg',
+    },
+   
   ];
 
   return (
