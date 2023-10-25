@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import { useState } from 'react';
 
 function Resources() {
    
@@ -46,18 +47,41 @@ function Resources() {
   
     ];
 
+    const cardsPerPage = 10;
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const indexOfLastCard = currentPage * cardsPerPage;
+    const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+    const currentCards = cardContent.slice(indexOfFirstCard, indexOfLastCard);
+
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
+    const nextPage = () => {
+        if (currentPage < Math.ceil(cardContent.length / cardsPerPage)) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
+
+    const prevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
+
     return (
-        <div className="flex justify-center items-center "> 
+        <><div className="flex justify-center items-center"> 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-            {cardContent.map((card, index) => (
-                <div key={index} className="p-6 bg-white border border-gray-200 rounded-lg shadow max-w-md">
+            {currentCards.map((card, index) => (
+                <div key={index} className="p-6 bg-white border border-gray-200  shadow max-w-md">
                     <a href="#">
                         <h5 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 ">{card.title}</h5>
                     </a> 
-                    <img src={card.imageSrc} alt={card.title} className="mb-3 w-full rounded-lg" />
+                    <img src={card.imageSrc} alt={card.title} className="mb-3 w-full " />
                     <p className="mb-3 font-normal text-gray-700 text-lg">{card.description}</p>
                    
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 ">
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-red-700  hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 ">
                         Read more
                         <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -66,8 +90,27 @@ function Resources() {
                 </div>
             ))}
         </div>
-
+        <div className="flex justify-center mt-4 space-x-2">
+                <button onClick={prevPage} disabled={currentPage === 1}>
+                    Prev
+                </button>
+                {Array.from({ length: Math.ceil(cardContent.length / cardsPerPage) }, (_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => paginate(index + 1)}
+                        className={currentPage === index + 1 ? "active" : ""}
+                    >
+                        {index + 1}
+                    </button>
+                ))}
+                <button onClick={nextPage} disabled={currentPage === Math.ceil(cardContent.length / cardsPerPage)}>
+                    Next
+                </button>
+            </div>
         </div>
+        < Footer />
+        </>
+        
        
     );
 }

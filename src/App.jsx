@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage'
 import ProductPage from './components/ProductPage'
 import Navbar from './components/Navbar'
 import Resources from './components/Resources'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<LandingPage /> }/>
           <Route path="/products" element={<ProductPage /> }/>
           <Route path="/resources" element={<Resources /> }/>
+          <Route path="/contact" element={<Contact /> }/>
           
         </Routes>
        
