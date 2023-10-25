@@ -176,7 +176,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
               style={{
                 backgroundImage: "url('https://images.pexels.com/photos/3081940/pexels-photo-3081940.jpeg?auto=compress&cs=tinysrgb&w=1600')",
                 backgroundSize: 'cover',
-                // backgroundPosition: 'center',
+                backgroundPosition: 'center',
                 height: '200px',
              
               }}

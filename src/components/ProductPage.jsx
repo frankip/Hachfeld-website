@@ -46,6 +46,7 @@ const ProductPage = () => {
 
   return (
     <div className="bg-gray-100 mt-16 ">
+      <div className='flex-grow'>
       <div className="flex flex-col sm:flex-row ml-80 mr-96">
         <div className="sm:w-1/3 p-4  ml-4 sm:ml-0">
           <div className="mb-10 bg-gray-200 p-6 flex justify-center">
@@ -76,6 +77,7 @@ const ProductPage = () => {
 
               </div>
             ))}
+            </div>
           </div>
         </div>
       </div>
