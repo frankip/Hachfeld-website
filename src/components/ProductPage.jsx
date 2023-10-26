@@ -54,16 +54,16 @@ const ProductPage = () => {
               Get a Free Quote
             </button>
           </div>
-          <div className="bg-gray-200 p-12 h-96">
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">Contact Us</h2>
-            <p className="text-black text-lg">Office 308, Lunga Lunga</p>
-            <p className="text-black text-lg">Square,</p>
-            <p className="text-lg mb-4">Industrial Area,</p>
-            <p className="text-lg">+254 750 520 179</p>
-            <p className="text-lg mb-4">+254 717 520 179</p>
-            <p className="text-lg">info@hachfeld.co.ke</p>
-            <p className="text-lg">sales@hachfeld.co.ke</p>
-            <p className="text-lg">www.hachfeld.co.ke</p>
+          <div className="bg-gray-200 px-16 py-24">
+            <h2 className="text-4xl font-bold mb-4 ">Contact Us</h2>
+            <p className="text-black text-xl">Office 308, Lunga Lunga</p>
+            <p className="text-black text-xl">Square,</p>
+            <p className="text-xl mb-4">Industrial Area,</p>
+            <p className="text-xl">+254 750 520 179</p>
+            <p className="text-xl mb-4">+254 717 520 179</p>
+            <p className="text-xl">info@hachfeld.co.ke</p>
+            <p className="text-xl">sales@hachfeld.co.ke</p>
+            <p className="text-xl">www.hachfeld.co.ke</p>
           </div>
         </div>
         <div className="sm:w-2/3 p-4">
