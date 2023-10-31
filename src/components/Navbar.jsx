@@ -102,6 +102,9 @@ const Navbar = () => {
         <li>
           <Link to="/contact" className="hover:no-underline hover:text-gray-500 transition-colors duration-300 font-medium text-lg">Contact Us</Link>
         </li>
+        <li>
+          <Link to="about-us" className="hover:no-underline hover:text-gray-500 transition-colors duration-300 font-medium text-lg">About Us</Link>
+        </li>
         <li className="relative group">
             <span
               className="hover:text-gray-500 cursor-pointer transition-colors duration-300 font-medium text-lg"

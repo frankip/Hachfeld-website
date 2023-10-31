@@ -6,6 +6,7 @@ import ProductPage from './components/ProductPage'
 import Navbar from './components/Navbar'
 import Resources from './components/Resources'
 import Contact from './components/Contact'
+import AboutUs from './components/AboutUs'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/products" element={<ProductPage /> }/>
           <Route path="/resources" element={<Resources /> }/>
           <Route path="/contact" element={<Contact /> }/>
+          <Route path="/about-us" element={<AboutUs /> }/>
           
         </Routes>
        

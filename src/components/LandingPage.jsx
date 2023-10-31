@@ -24,14 +24,7 @@ const LandingPage = () => {
         </button></div>
        
      
-      <div className="landing-content text-center mt-8">
-        <p className="text-xl">
-        Hachfeld Limited is an equipment, reagents and consumables distribution company in Nairobi, Kenya.
-        </p>
-<p className="text-xl mt-6 pl-6 pr-5">
-Through strategic partnerships with leading global manufacturers. We help municipal and industrial customers produce reliable testing results, optimize processes, maximize returns at a competitive cost through expertise, technologies and local footprint.
-        </p>
-      </div>
+      
       <div className="py-16 bg-gray-100">
         <div className="container mx-auto text-center">
           <div className='bg-white p-1  shadow-md'><h2 className="text-3xl mb-4 mt-4">What We Do</h2></div>
@@ -154,7 +147,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                <span className="text-xl font-bold text-white">Power Generation</span>
+                <span className="text-xl font-bold text-white">Oil & Gas</span>
               </div>
             </div>
             <div
@@ -252,7 +245,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
           </div>
       </div>
        
-        <div className="third-section py-16">
+        {/* <div className="third-section py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Our Promise</h2>
         
@@ -279,7 +272,7 @@ Through strategic partnerships with leading global manufacturers. We help munici
             Discover the solutions we provide to make your processes efficient.
           </p>
         </div>
-        </div>
+        </div> */}
 
 
      
