@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Resources from './components/Resources'
 import Contact from './components/Contact'
 import AboutUs from './components/AboutUs'
+import ProductDetailPage from './components/ProductDetailPage'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/resources" element={<Resources /> }/>
           <Route path="/contact" element={<Contact /> }/>
           <Route path="/about-us" element={<AboutUs /> }/>
+          <Route path="/product/:id" element={<ProductDetailPage />} />
           
         </Routes>
        

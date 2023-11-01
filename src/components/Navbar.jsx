@@ -25,14 +25,14 @@ const Navbar = () => {
   return (
     <div>
     {isTopSectionVisible && (
-      <div className="text-white p-2 text-center bg-red-950">
+      <div className="text-white p-2 text-center bg-blue-950">
         <span className="font-bold">Email:</span> info@hachfeld.co.ke
         <span className="font-bold pl-14">Call Now:</span> +254 750 520 179 | +254 717 520 179
         <span className="font-bold pl-14">Visit us:</span> Office 308, Lunga Lunga Square, Industrial Area, Nairobi.
       </div>
     )}
 
-<nav className={`flex border border-gray-300 items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-1000'}`}>
+<nav className={`flex border border-gray-300 items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-300'}`}>
 
       <div className="flex items-center pl-96">
         <Link to="/"><img src="src/images/logo.png" alt="Logo" className="w-full h-11" /></Link>

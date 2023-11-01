@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 
+
 const ProductPage = () => {
   const products = [
     {
@@ -50,9 +51,9 @@ const ProductPage = () => {
       <div className="flex flex-col sm:flex-row ml-80 mr-96">
         <div className="sm:w-1/3 p-4  ml-4 sm:ml-0">
           <div className="mb-10 bg-gray-200 p-6 flex justify-center">
-            <button className="bg-red-800 text-white text-2xl px-14 py-7 hover:bg-red-700">
+            <Link to="/contact"><button className="bg-blue-800 text-white text-2xl px-14 py-7 hover:bg-blue-700">
               Get a Free Quote
-            </button>
+            </button></Link>
           </div>
           <div className="bg-gray-200 px-16 py-24">
             <h2 className="text-4xl font-bold mb-4 ">Contact Us</h2>
@@ -69,15 +70,15 @@ const ProductPage = () => {
         <div className="sm:w-2/3 p-4">
           <h2 className="text-6xl font-bold">Shop</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
-            {products.map((product) => (
-              <div key={product.id} className="bg-white p-6">
-                <img src={product.imageUrl} alt={product.name} className="w-fullobject-cover mb-4 h-96" />
+          {products.map((product) => (
+            <div key={product.id} className="bg-white p-6">
+              <Link to={`/product/${product.id}`}>
+                <img src={product.imageUrl} alt={product.name} className="w-full object-cover mb-4 h-96" />
                 <h3 className="text-xl font-semibold">{product.name}</h3>
-              
-
-              </div>
-            ))}
+              </Link>
             </div>
+          ))}
+        </div>
           </div>
         </div>
       </div>

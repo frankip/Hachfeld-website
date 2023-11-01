@@ -51,7 +51,7 @@ const Contact = () => {
                   type="tel"
                   id="phoneNumber"
                   className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                  placeholder={`E.g., 123-456-7890`}
+                  placeholder={`E.g., 0712345678`}
                   required
                 />
               </div>

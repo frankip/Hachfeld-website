@@ -19,9 +19,9 @@ const LandingPage = () => {
         <p className="text-4xl mb-8 ml-8 pt-6 pb-6">
         Analytical laboratory & process equipment, reagents and consumables.
         </p>
-        <button className="bg-red-800 text-white hover:bg-red-700 font-bold py-2 px-6 text-xl ml-8 border-red-950 ">
+       <Link to="/products"><button className="bg-blue-800 text-white hover:bg-blue-700 font-bold py-2 px-6 text-xl ml-8 border-blue-950 ">
           View Products
-        </button></div>
+        </button></Link> </div>
        
      
       
@@ -350,9 +350,9 @@ const LandingPage = () => {
           Contact us today to learn how our customized plans can help grow your business.
         </p>
       </div>
-      <button className="bg-red-800 text-white hover:bg-red-700 font-bold py-2 px-6 text-xl border-red-950">
+      <Link to="/contact"><button className="bg-blue-800 text-white hover:bg-blue-700 font-bold py-2 px-6 text-xl border-blue-950">
         Request a Quote
-      </button>
+      </button></Link>
     </div>
     < Footer />
   
