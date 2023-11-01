@@ -2,12 +2,13 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import LandingPage from './components/LandingPage'
-import ProductPage from './components/ProductPage'
+import ProductPage from './components/products/ProductPage'
 import Navbar from './components/Navbar'
 import Resources from './components/Resources'
 import Contact from './components/Contact'
 import AboutUs from './components/AboutUs'
-import ProductDetailPage from './components/ProductDetailPage'
+import ProductDetailPage from './components/products/ProductDetailPage'
+import ProductDescription from './components/products/ProductDescription'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact /> }/>
           <Route path="/about-us" element={<AboutUs /> }/>
           <Route path="/product/:id" element={<ProductDetailPage />} />
+          <Route path="/product/:id/:productName" element={<ProductDescription />} />
           
         </Routes>
        

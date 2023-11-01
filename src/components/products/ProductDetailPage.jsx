@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import products from './Products';
-import Footer from './Footer';
+import products from './Products'
+import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 
 const ProductDetailPage = () => {
-  const { id } = useParams(); // Get the product ID from the URL parameter
+  const { id } = useParams(); 
 
-  // Find all products with the matching ID from your product data
+ 
   const Products = products.filter((p) => p.id === Number(id));
 
   if (Products.length === 0) {
@@ -41,9 +41,10 @@ const ProductDetailPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
             {Products.map((product) => (
               <div key={product.id} className="bg-white p-6">
-                <img src={product.imageUrl} alt={product.name} className="w-full object-cover mb-4 h-96" />
-                <h3 className="text-xl font-semibold">{product.name}</h3>
-              
+               <Link to={`/product/${product.id}/${product.name}`}> {/* Link to the product description page using the product name */}
+            <img src={product.imageUrl} alt={product.name} className="w-full object-cover mb-4 h-96" />
+            <h3 className="text-xl font-semibold">{product.name}</h3>
+          </Link>
 
               </div>
             ))}
