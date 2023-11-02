@@ -41,7 +41,7 @@ const ProductDetailPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
             {Products.map((product) => (
               <div key={product.id} className="bg-white p-6">
-               <Link to={`/product/${product.id}/${product.name}`}> {/* Link to the product description page using the product name */}
+               <Link to={`/product/${product.id}/${product.name}`}> 
             <img src={product.imageUrl} alt={product.name} className="w-full object-cover mb-4 h-96" />
             <h3 className="text-xl font-semibold">{product.name}</h3>
           </Link>
