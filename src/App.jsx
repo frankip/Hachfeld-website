@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import LandingPage from './components/LandingPage'
+import LandingPage from './components/home/LandingPage'
 import ProductPage from './components/products/ProductPage'
 import Navbar from './components/Navbar'
 import Resources from './components/Resources'

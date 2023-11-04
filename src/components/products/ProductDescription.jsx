@@ -7,7 +7,6 @@ import Footer from '../Footer';
 const ProductDescription = () => {
   const { productName } = useParams();
 
-  // Find the product with the matching name
   const product = products.find((p) => p.name === productName);
 
   if (!product) {
@@ -51,34 +50,30 @@ const ProductDescription = () => {
               </div>
             </div>
           </div>
-          
         </div>
         <div className="mt-8">
-              <h2 className="text-4xl font-semibold text-left mb-4 ml-96">Description</h2>
-              <div className="text-xl mt-8">
-     
-              <p className="text-2xl text-left ml-96">
-  {product.details.split('. ').map((paragraph, index) => (
-    <p key={index} className="mb-4">
-      {paragraph}
-    </p>
-  ))}
-</p>
-
-    </div>
-            </div> 
-            <div className="mt-8 ">
+          <h2 className="text-4xl font-semibold text-left mb-4 ml-96">Description</h2>
+          <div className="text-xl mt-8">
+            <p className="text-2xl text-left ml-96">
+              {product.details.split('. ').map((paragraph, index) => (
+                <p key={index} className="mb-4">
+                  {paragraph}
+                </p>
+              ))}
+            </p>
+          </div>
+        </div>
+        <div className="mt-8">
           <h2 className="text-3xl font-semibold text-left mb-4 ml-96">Related Products</h2>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-4 gap-2">
             {relatedProducts.map((relatedProduct) => (
-              <div key={relatedProduct.id} className="bg-white p-4 w-96 ml-96 ">
+              <div key={relatedProduct.id} className="bg-white p-4 w-96 ml-96">
                 <img src={relatedProduct.imageUrl} alt={relatedProduct.name} className="w-full object-cover mb-2 h-96" />
                 <h3 className="text-xl font-semibold text-center mb-2">{relatedProduct.name}</h3>
               </div>
             ))}
           </div>
         </div>
-       
       </div>
       <Footer />
     </div>
