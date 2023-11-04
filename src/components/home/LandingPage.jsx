@@ -1,9 +1,9 @@
 import React from 'react';
-import HeroSection from './HeroSection';
+import HeroSection from './Hero';
 import ProductCard from './ProductCard';
-import VerticalMarketsSection from './VerticalMarketsSection';
-import PartnerBrandsSection from './PartnerBrandsSection';
-import ContactSection from './ContactSection';
+import VerticalMarketsSection from './VericalMarket';
+import PartnerBrandsSection from './PartnerBrands';
+import ContactSection from './Contact';
 import Footer from '../Footer';
 
 const LandingPage = () => {
