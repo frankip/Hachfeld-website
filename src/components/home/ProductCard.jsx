@@ -7,47 +7,47 @@ const ProductCard = () => {
   const products = [
     {
       title: 'Lab Instruments',
-      imageSrc: 'src/images/flask.png',
+      imageSrc: '/images/flask.png',
       description: 'Learn More',
     },
     {
       title: 'Lab Meters & Probes',
-      imageSrc: 'src/images/ph-meter.png',
+      imageSrc: '/images/ph-meter.png',
       description: 'Learn More',
     },
     {
       title: 'Resins',
-      imageSrc: 'src/images/resins.png',
+      imageSrc: '/images/resins.png',
       description: 'Learn More',
     },
     {
       title: 'RO Membranes',
-      imageSrc: 'src/images/lab.png',
+      imageSrc: '/images/lab.png',
       description: 'Learn More',
     },
     {
       title: 'RO/UF/IE Systems',
-      imageSrc: 'src/images/filtration.png',
+      imageSrc: '/images/filtration.png',
       description: 'Learn More',
     },
     {
       title: 'Antiscalants',
-      imageSrc: 'src/images/medical-lab.png',
+      imageSrc: '/images/medical-lab.png',
       description: 'Learn More',
     },
     {
       title: 'Online Analyzers & Sensors',
-      imageSrc: 'src/images/microchip.png',
+      imageSrc: '/images/microchip.png',
       description: 'Learn More',
     },
     {
       title: 'UV Disinfection Systems',
-      imageSrc: 'src/images/humidity.png',
+      imageSrc: '/images/humidity.png',
       description: 'Learn More',
     },
     {
       title: 'Chemical Dosing Pumps',
-      imageSrc: 'src/images/oil-refinery.png',
+      imageSrc: '/images/oil-refinery.png',
       description: 'Learn More',
     },
   ];

@@ -57,7 +57,7 @@ const Navbar = () => {
       <nav className={`flex border border-gray-300 items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-300'}`}>
         <div className="flex items-center pl-96">
           <Link to="/">
-            <img src="src/images/logo.png" alt="Logo" className="w-full h-11" />
+            <img src="/images/logo.png" alt="Logo" className="w-full h-11" />
           </Link>
         </div>
         <ul className="flex items-center space-x-14 pr-96">
