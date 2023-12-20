@@ -4,42 +4,42 @@ const PartnerBrandsSection = () => {
   const partnerBrands = [
     {
       title: 'Hach',
-      imageUrl: '/src/images/hach-and-hachfeld-kenya.webp',
+      imageUrl: '/images/hach-and-hachfeld-kenya.webp',
       description: 'Complete range of Lab and Online Water Quality Testing Solutions',
     },
     {
       title: 'Luminultra',
-      imageUrl: '/src/images/Luminultra-1.webp',
+      imageUrl: '/images/Luminultra-1.webp',
       description: 'Rapid, Accurate and Portable Microbial Testing Solutions',
     },
     {
       title: 'LG Chem',
-      imageUrl: '/src/images/lgchem-2.webp',
+      imageUrl: '/images/lgchem-2.webp',
       description: 'NanoH2O™ seawater and brackish water RO Membranes',
     },
     {
       title: 'Purolite',
-      imageUrl: '/src/images/Purolite_Life_Sciences_Logo-1.webp',
+      imageUrl: '/images/Purolite_Life_Sciences_Logo-1.webp',
       description: 'Ion exchange, adsorbent, and specialty resin technologies',
     },
     {
       title: 'Prominent',
-      imageUrl: '/src/images/prominent-1.webp',
+      imageUrl: '/images/prominent-1.webp',
       description: 'Metering Systems for Fluid Handling',
     },
     {
       title: 'Suez',
-      imageUrl: '/src/images/suez-waters-1.webp',
+      imageUrl: '/images/suez-waters-1.webp',
       description: 'Chemical Solutions for Water Treatment',
     },
     {
       title: 'Magnetic',
-      imageUrl: '/src/images/magnetic-logo-2.webp',
+      imageUrl: '/images/magnetic-logo-2.webp',
       description: 'Portable Desalination Technologies',
     },
     {
       title: 'Luminor',
-      imageUrl: '/src/images/luminor_logo-1.webp',
+      imageUrl: '/images/luminor_logo-1.webp',
       description: 'UltraViolet Water Disinfection Solutions',
     },
   ];
