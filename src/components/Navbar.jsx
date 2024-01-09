@@ -10,14 +10,14 @@ const Navbar = () => {
     setIsSearchVisible(!isSearchVisible);
   };
 
-  const [isTopSectionVisible, setIsTopSectionVisible] = useState(true);
+  const [isTopSectionVisible, setIsTopSectionVisible] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         setIsTopSectionVisible(false);
       } else {
-        setIsTopSectionVisible(true);
+        setIsTopSectionVisible(false);
       }
     });
   }, []);
@@ -57,7 +57,8 @@ const Navbar = () => {
       <nav className={`flex border border-gray-300 items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-300'}`}>
         <div className="flex items-center pl-96">
           <Link to="/">
-            <img src="/images/logo.png" alt="Logo" className="w-full h-11" />
+            {/* <img src="logo.png" alt="Logo" className="w-full h-11" /> */}
+            <h1 className="font-medium text-green">TAPOYO</h1>
           </Link>
         </div>
         <ul className="flex items-center space-x-14 pr-96">
