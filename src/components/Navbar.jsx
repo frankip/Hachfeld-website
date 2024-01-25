@@ -54,14 +54,16 @@ const Navbar = () => {
         </div>
       )}
 
-      <nav className={`flex border border-gray-300 items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ? 'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-300'}`}>
-        <div className="flex items-center pl-96">
+      <nav className={`flex items-center justify-between p-4 bg-white text-black ${isTopSectionVisible ?'mt-0' : 'fixed w-full top-0 transition-all ease-in-out duration-300'}`}>
+        <div className="flex items-center">
           <Link to="/">
             {/* <img src="logo.png" alt="Logo" className="w-full h-11" /> */}
             <h1 className="font-medium text-green">TAPOYO</h1>
           </Link>
         </div>
-        <ul className="flex items-center space-x-14 pr-96">
+        <div className="md:hidden" >
+  </div>
+        <ul className="hidden md:flex items-center space-x-8 md:space-x-14">
           {menuItems.map((item, index) => (
             <li key={index} className="relative group">
               {item.subItems ? (
