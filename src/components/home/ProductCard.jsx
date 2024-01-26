@@ -54,19 +54,16 @@ const ProductCard = () => {
 
   return (
 <div className="container mx-auto px-4 md:px-0 text-center">
-    <div className="bg-white p-4 md:p-6 shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold mb-4 md:text-3xl">What We Do</h2>
-    </div>
     <p className="text-3xl font-bold mb-6 md:mb-8 mt-4 md:mt-6">Our Products and Solutions</p>
-    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
       {products.map((product, index) => (
-        <Link key={index} to={`/products/${index}`}>
+        <div key={index} to={`/products/${index}`}>
           <div
-            className={`p-4 rounded-lg shadow-md aspect-1x1 ${
+            className={`p-6 rounded-lg shadow-md aspect-1x1 ${
               index % 2 === 0 ? 'bg-white' : 'bg-gray-100'
             } hover:bg-gray-200 transition duration-300`}
           >
-            <img src={product.imageSrc} alt={`Icon ${index}`} className="w-24 h-24 mb-4 md:mb-6" />
+            <img src={product.imageSrc} alt={`Icon ${index}`} className="w-24 h-24 mb-4 md:mb-1 inline-block"/>
             <h3 className="text-xl font-bold mb-2 md:text-2xl">
               <Link to={`/products/${index}`}>{product.title}</Link>
             </h3>
@@ -76,7 +73,7 @@ const ProductCard = () => {
               </a>
             </Link>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
 

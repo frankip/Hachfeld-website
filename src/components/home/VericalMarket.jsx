@@ -42,7 +42,7 @@ const VerticalMarketsSection = () => {
       <p className="text-xl mb-8">
         There is no denying the fact that the success of an analytical & engineering lies mostly in the services it offers. Ours is a proven record in various environments and industries.
       </p>
-      <div className="grid grid-cols-4 gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {verticalMarkets.map((market, index) => (
           <div
             key={index}

@@ -17,9 +17,6 @@ const LandingPage = () => {
           <VerticalMarketsSection />
         </div>
       </div>
-
-      <PartnerBrandsSection />
-
       <ContactSection />
       <Footer />
     </div>
