@@ -15,47 +15,47 @@ const ProductCard = () => {
       imageSrc: '/images/ph-meter.png',
       description: 'Learn More',
     },
-    {
-      title: 'Resins',
-      imageSrc: '/images/resins.png',
-      description: 'Learn More',
-    },
-    {
-      title: 'RO Membranes',
-      imageSrc: '/images/lab.png',
-      description: 'Learn More',
-    },
-    {
-      title: 'RO/UF/IE Systems',
-      imageSrc: '/images/filtration.png',
-      description: 'Learn More',
-    },
-    {
-      title: 'Antiscalants',
-      imageSrc: '/images/medical-lab.png',
-      description: 'Learn More',
-    },
-    {
-      title: 'Online Analyzers & Sensors',
-      imageSrc: '/images/microchip.png',
-      description: 'Learn More',
-    },
-    {
-      title: 'UV Disinfection Systems',
-      imageSrc: '/images/humidity.png',
-      description: 'Learn More',
-    },
-    {
-      title: 'Chemical Dosing Pumps',
-      imageSrc: '/images/oil-refinery.png',
-      description: 'Learn More',
-    },
+    // {
+    //   title: 'Resins',
+    //   imageSrc: '/images/resins.png',
+    //   description: 'Learn More',
+    // },
+    // {
+    //   title: 'RO Membranes',
+    //   imageSrc: '/images/lab.png',
+    //   description: 'Learn More',
+    // },
+    // {
+    //   title: 'RO/UF/IE Systems',
+    //   imageSrc: '/images/filtration.png',
+    //   description: 'Learn More',
+    // },
+    // {
+    //   title: 'Antiscalants',
+    //   imageSrc: '/images/medical-lab.png',
+    //   description: 'Learn More',
+    // },
+    // {
+    //   title: 'Online Analyzers & Sensors',
+    //   imageSrc: '/images/microchip.png',
+    //   description: 'Learn More',
+    // },
+    // {
+    //   title: 'UV Disinfection Systems',
+    //   imageSrc: '/images/humidity.png',
+    //   description: 'Learn More',
+    // },
+    // {
+    //   title: 'Chemical Dosing Pumps',
+    //   imageSrc: '/images/oil-refinery.png',
+    //   description: 'Learn More',
+    // },
   ];
 
   return (
 <div className="container mx-auto px-4 md:px-0 text-center">
     <p className="text-3xl font-bold mb-6 md:mb-8 mt-4 md:mt-6">Our Products and Solutions</p>
-    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-2">
       {products.map((product, index) => (
         <div key={index} to={`/products/${index}`}>
           <div
@@ -65,9 +65,9 @@ const ProductCard = () => {
           >
             <img src={product.imageSrc} alt={`Icon ${index}`} className="w-24 h-24 mb-4 md:mb-1 inline-block"/>
             <h3 className="text-xl font-bold mb-2 md:text-2xl">
-              <Link to={`/products/${index}`}>{product.title}</Link>
+              <Link to={`/product/${index+1}`}>{product.title}</Link>
             </h3>
-            <Link to={`/products/${index}`}>
+            <Link to={`/product/${index+1}`}>
               <a className="text-gray-500 hover:text-gray-700 flex items-center justify-center">
                 {product.description} <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
               </a>

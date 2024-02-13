@@ -9,8 +9,6 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between pl-8 pr-8 md:pr-80">
           <div className="text-left mb-6 md:mb-0 md:mr-12">
             <h2 className="text-xl font-bold mb-4">Visit Us</h2>
-            <p>Office 308, Lunga Lunga Square,</p>
-            <p>Industrial Area,</p>
             <p>Nairobi, Kenya.</p>
           </div>
           <div className="text-left mb-6 md:mb-0 md:ml-12">

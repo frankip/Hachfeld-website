@@ -25,9 +25,9 @@ const Contact = () => {
   const fullPhoneNumber = `${selectedCountry.prefix} ${phoneNumberPrefix}`;
 
   return (
-    <><div className="flex justify-center items-center">
-      <div className="p-8 w-2/5">
-        <section className="bg-white">
+    <><div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="p-8">
+        <section className="bg-white flex flex-col items-center">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-left text-gray-900">Hello Let's Get in touch</h2>
             <form action="#" className="space-y-2">
@@ -66,21 +66,13 @@ const Contact = () => {
         </section>
       </div>
       <div className="p-8">
-      <div className="bg-gray-200 py-24 px-16">
+      <div className="bg-gray-200 p-4 md:p-8 flex flex-col items-center text-center">
           <h2 className="text-4xl font-bold mb-4">You can find us at</h2>
-          
-          <p className="text-black text-xl">Office 308, Lunga Lunga Square,</p>
-          <p className="text-xl">Industrial Area,</p>
           <p className="text-xl">Nairobi, Kenya</p>
           <p className="text-3xl mt-6 font-bold">Opening hours</p>
           <p className="text-xl mt-4">Monday – Friday</p>
           <p className="text-xl">9.00 AM – 5.30 PM</p>
           <p className="text-3xl mt-6 font-bold mb-4">Call us now</p>
-          <p className="text-xl">+254 750 520 179</p>
-          <p className="text-xl mb-4">+254 717 520 179</p>
-          <p className="text-3xl mt-6 font-bold">Email us</p>
-          <p className="text-xl">info@hachfeld.co.ke</p>
-          <p className="text-xl">sales@hachfeld.co.ke</p>
         </div>
       </div>
       

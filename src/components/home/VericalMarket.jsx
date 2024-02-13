@@ -2,14 +2,14 @@ import React from 'react';
 
 const VerticalMarketsSection = () => {
   const verticalMarkets = [
-    {
-      title: 'Water Treatment',
-      imageUrl: 'https://images.pexels.com/photos/5047901/pexels-photo-5047901.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    },
-    {
-      title: 'Oil & Gas',
-      imageUrl: 'https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    },
+    // {
+    //   title: 'Water Treatment',
+    //   imageUrl: 'https://images.pexels.com/photos/5047901/pexels-photo-5047901.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    // },
+    // {
+    //   title: 'Oil & Gas',
+    //   imageUrl: 'https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    // },
     {
       title: 'Contract Laboratories',
       imageUrl: 'https://images.pexels.com/photos/3735709/pexels-photo-3735709.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -22,14 +22,14 @@ const VerticalMarketsSection = () => {
       title: 'Pharmaceutical Companies',
       imageUrl: 'https://images.pexels.com/photos/5699522/pexels-photo-5699522.jpeg?auto=compress&cs=tinysrgb&w=1600',
     },
-    {
-      title: 'Academic Institutions',
-      imageUrl: 'https://images.pexels.com/photos/2128249/pexels-photo-2128249.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    },
-    {
-      title: 'Mining Companies',
-      imageUrl: 'https://images.pexels.com/photos/2101137/pexels-photo-2101137.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    },
+    // {
+    //   title: 'Academic Institutions',
+    //   imageUrl: 'https://images.pexels.com/photos/2128249/pexels-photo-2128249.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    // },
+    // {
+    //   title: 'Mining Companies',
+    //   imageUrl: 'https://images.pexels.com/photos/2101137/pexels-photo-2101137.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    // },
     {
       title: 'Engineering & Consultancy',
       imageUrl: 'https://images.pexels.com/photos/8470810/pexels-photo-8470810.jpeg?auto=compress&cs=tinysrgb&w=1600',
