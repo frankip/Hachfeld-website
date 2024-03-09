@@ -68,7 +68,10 @@ const Contact = () => {
       <div className="p-8">
       <div className="bg-gray-200 p-4 md:p-8 flex flex-col items-center text-center">
           <h2 className="text-4xl font-bold mb-4">You can find us at</h2>
+          <p className="text-2xl mt-6">Self Storage Center</p>
+            <p className="text-2xl mt-6">Mombasa Road</p>
           <p className="text-xl">Nairobi, Kenya</p>
+          <p className="text-xl">254722587179</p>
           <p className="text-3xl mt-6 font-bold">Opening hours</p>
           <p className="text-xl mt-4">Monday – Friday</p>
           <p className="text-xl">9.00 AM – 5.30 PM</p>

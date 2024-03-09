@@ -7,11 +7,22 @@ const Footer = () => {
     <div>
       <div className="text-white p-8 bg-blue-950">
         <div className="flex flex-col md:flex-row justify-between pl-8 pr-8 md:pr-80">
-          <div className="text-left mb-6 md:mb-0 md:mr-12">
+          <div className="text-left mb-4 md:mb-0 md:mr-12">
             <h2 className="text-xl font-bold mb-4">Visit Us</h2>
+            <p>Self Storage Center</p>
+            <p>Mombasa Road</p>
             <p>Nairobi, Kenya.</p>
+            <p></p>
+            
           </div>
-          <div className="text-left mb-6 md:mb-0 md:ml-12">
+          <div className="text-left mb-4 md:mb-0 md:mr-12">
+          <p>Tapoyo Builders Limited</p>
+            <p>P.O Box 28666 - 20100</p>
+            <p>Nairobi, Kenya.</p>
+            <p>+25472258719</p>
+            <p>info@tapoyo.com</p>
+          </div>
+          <div className="text-left mb-4 md:mb-0 md:ml-12">
             <h2 className="text-xl font-bold mb-4">Quick Links</h2>
             <ul className="space-y-">
               <Link to="/products"><li><a >Our Products</a></li></Link>
