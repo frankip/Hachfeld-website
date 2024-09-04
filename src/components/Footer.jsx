@@ -17,9 +17,9 @@ const Footer = () => {
           </div>
           <div className="text-left mb-4 md:mb-0 md:mr-12">
           <p>Tapoyo Builders Limited</p>
-            <p>P.O Box 28666 - 20100</p>
+            <p>P.O Box 2866 - 20100</p>
             <p>Nairobi, Kenya.</p>
-            <p>+25472258719</p>
+            <p>+254722587179</p>
             <p>info@tapoyo.com</p>
           </div>
           <div className="text-left mb-4 md:mb-0 md:ml-12">

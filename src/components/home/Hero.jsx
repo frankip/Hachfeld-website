@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 
 const HeroSection = () => {
-  const backgroundImageUrl = "url('https://images.pexels.com/photos/257703/pexels-photo-257703.jpeg?auto=compress&cs=tinysrgb&w=1600')";
+  const backgroundImageUrl = `url("/images/landingpage.jpeg")`;
 
   return (
     <div
-    className="hero-section bg-cover bg-center text-white text-left py-16 md:py-48"
+    className="hero-section bg-cover bg-center text-white text-left py-16 md:py-48 h-full w-full" 
     style={{
       backgroundImage: backgroundImageUrl,
-      height: "650px",
+      // height: "650px",
       minHeight: "400px", /* Ensure a minimum height for smaller screens */
     }}
   >
