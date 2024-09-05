@@ -68,7 +68,7 @@ const Contact = () => {
       <div className="p-8">
       <div className="bg-gray-200 p-4 md:p-8 flex flex-col items-center text-center">
           <h2 className="text-4xl font-bold mb-4">You can find us at</h2>
-          <p className="text-2xl mt-6">Self Storage Center</p>
+          <p className="text-2xl mt-6">Storage Central</p>
             <p className="text-2xl mt-6">Mombasa Road</p>
           <p className="text-xl">Nairobi, Kenya</p>
           <p className="text-xl">254722587179</p>

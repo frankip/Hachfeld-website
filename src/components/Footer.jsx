@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="text-left mb-4 md:mb-0 md:mr-12">
             <h2 className="text-xl font-bold mb-4">Visit Us</h2>
-            <p>Self Storage Central</p>
+            <p>Storage Central</p>
             <p>Mombasa Road</p>
             <p>Nairobi, Kenya.</p>
             <p></p>
