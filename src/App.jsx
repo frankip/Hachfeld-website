@@ -1,5 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Analytics } from "@vercel/analytics/react"
+
 
 import LandingPage from './components/home/LandingPage'
 import ProductPage from './components/products/ProductPage'
@@ -15,6 +17,7 @@ function App() {
 
   return (
     <Router>
+      
        <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage /> }/>
@@ -26,7 +29,7 @@ function App() {
           <Route path="/product/:id/:productName" element={<ProductDescription />} />
           
         </Routes>
-       
+        <Analytics />
        </Router>
        
   
