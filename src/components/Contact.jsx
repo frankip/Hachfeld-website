@@ -3,7 +3,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import Footer from './Footer';
 import 'react-toastify/dist/ReactToastify.css';
 
-// const sendEmail = 'https://hooks.zapier.com/hooks/catch/20181772/2ddg9c8/'
 const URL=import.meta.env.VITE_REACT_FORM_API_URL
 const Contact = () => {
 
